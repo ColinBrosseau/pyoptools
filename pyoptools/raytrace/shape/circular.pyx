@@ -38,6 +38,8 @@ cdef class Circular(Shape):
     # Tuple that holds the number of samples to be used to build the mesh. 
     # The first number gives radial samples, the second angular samples
     #samples=Tuple(Int(10), Int(36))
+
+    # The shape is implicitly centered on x,y = 0,0
     
     def __init__(self,radius=1.,samples=(10,36),*args, **kwargs):
         Shape.__init__(self,*args, **kwargs)
